@@ -1,14 +1,6 @@
 import * as fs from 'node:fs';
 import fetch from 'node-fetch';
 
-fs.readFile('memes/01.jpg', function (err) {
-  if (!err) {
-    for (let i = 1; i <= 10; i++) {
-      fs.unlinkSync(`memes/0${i}.jpg`);
-    }
-  }
-});
-
 const folderName = './memes';
 
 try {
